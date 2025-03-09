@@ -4,103 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vilarejo Europeu</title>
-    <style>
-      body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #7a288a;
-    color: #fff;
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+         
+        header {
+            background-color: #7a288a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+         
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+        
+        nav a:hover {
+            color: #ccc;  
+        }
+        #banner { 
+    height: 90vh; 
+    width: 90vw;
+    background-size: cover;
+    background-image: url('https://www.melhoresdestinos.com.br/wp-content/uploads/2023/09/cidadezinha-europa-conhecer-capa-1536x805.jpg');
     padding: 20px;
-    text-align: center;
 }
-
-nav ul {
-    list-style: none;
+#banner h1 {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 36px;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
 }
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-}
-
-nav a:hover {
-    color: #ccc; /* cor de hover */
-}
-
-button {
-    background-color: #7a288a; /* cor do botão */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-}
-
-button:hover {
-    background-color: #9c3f9c; /* cor de hover do botão */
-}
-
-
-      </style>
-
+        #dicas {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #dicas h2 {
+            margin-top: 0;
+        }
+        
+        #dicas ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #dicas li {
+            margin-bottom: 10px;
+        }
+        
+        #dicas a {
+            color: #337ab7;
+            text-decoration: none;
+        }
+        
+        #dicas a:hover {
+            color: #23527c;
+        }
+        
+    </style>
 </head>
 <body>
-  <header>
-    
-    <nav>
-        <ul>
-            <li><a href="#tripme">TripMe</a></li>
-            <li><a href="#meetUs">MeetUs</a></li>
-            <li><a href="#advice">Advice</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section id="tripme">
-        <h2>TripMe</h2>
-        <p>Descreva sua viagem perfeita!</p>
-    </section>
-    <section id="meetUs">
-        <h2>MeetUs</h2>
-        <p>Conheça nossa equipe!</p>
-    </section>
-    <section id="advice">
-        <h2>Advice</h2>
-        <p>Dicas e conselhos para sua viagem!</p>
-    </section>
-    <nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
-</nav>
-
-<button>Enviar</button>
-
-</main>
-<footer>
-  
-    <p>&copy; 2025 Vilarejo Europeu</p>
-</footer>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#tripme">TripMe</a></li>
+                <li><a href="#meetUs">MeetUs</a></li>
+                <li><a href="#advice">Advice</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section id="banner">
+            <h1>Vilarejo Europeu</h1>
+        </section>
+        <section id="tripme">
+            <h2>TripMe</h2>
+            <p>Descreva sua viagem perfeita!</p>
+        </section>
+        <section id="meetUs">
+            <h2>MeetUs</h2>
+            <p>Conheça nossa equipe!</p>
+        </section>
+        <section id="advice">
+            <h2>Advice</h2>
+            <p>Dicas e conselhos para sua viagem!</p>
+        </section> 
+        <section id="dicas">
+            <h2>Dicas para sua viagem</h2>
+            <ul>
+                <li><a href="#">Pesquise sobre o destino</a></li>
+                <li><a href="#">Planeje sua viagem com antecedência</a></li>
+                <li><a href="#">Verifique os requisitos de visto</a></li>
+                <li><a href="#">Mantenha-se seguro</a></li>
+                <li><a href="#">Respeite a cultura local</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        
+        <p>&copy; 2025 Vilarejo Europeu</p>
+    </footer>
 </body>
 </html>
+
