@@ -27,7 +27,7 @@ Este projeto foi desenvolvido como um desafio para criar uma landing page funcio
 🖼 Demonstração
 
 Você pode acessar uma versão ao vivo do projeto aqui:
-🔗 Viagens Landing Page - Deploy [<(https://github.com/yaneale/viagens--landing-page.git)>]
+🔗 Viagens Landing Page - (https://github.com/yaneale/viagens--landing-page.git)
 
 📌 Melhorias Futuras
 
