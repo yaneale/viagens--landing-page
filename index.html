@@ -6,138 +6,19 @@
     <title>Viagens - TripMe</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-nav {
-    background: #03055B;
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #f4a261;
-}
-
-.banner {
-    background-image: url('https://www.melhoresdestinos.com.br/wp-content/uploads/2023/09/cidadezinha-europa-conhecer-capa-1536x805.jpg');no-repeat center/cover;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    font-size: 2rem;
-    text-align: center;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 80%;
-    max-width: 400px;
-    position: relative;
-}
-
-#claim-offer {
-    background: #f4a261;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-#claim-offer:hover {
-    background: #e76f51;
-}
-
-section {
-    padding: 40px;
-    text-align: center;     
-}
-
-h1 {
-  position: absolute;
-  top: 21%;
-}
-section h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-footer {
-    background: #03055B;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-  </style>
-<body>
-   
+<body>   
     <nav>
         <ul>
             <li><a href="#tripme">TripMe</a></li>
             <li><a href="#meetus">MeetUs</a></li>
             <li><a href="#advice">Advice</a></li> 
-        </ul>
-        
+        </ul>  
     </nav>
 
     <main>
         <section class="banner">
             <h1>Descubra Lugares Incríveis pelo Mundo</h1>
         </section>
-        
     </main>
     
     <div id="offer-modal" class="modal">
@@ -166,37 +47,6 @@ footer {
     <footer>
         <p>&copy; 2025 Viagens TripMe. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        setTimeout(function() {
-        document.getElementById('offer-modal').style.display = "flex";
-    }, 5000);
-
-    document.getElementById('offer-modal').addEventListener('click', function() {
-        document.getElementById('offer-modal').style.display = "none";
-    });
-
-    document.getElementById('claim-offer').addEventListener('click', function(event) {
-        event.stopPropagation();
-        alert("Oferta resgatada! Use o código ProgramandoComDEVstart no checkout.");
-        document.getElementById('offer-modal').style.display = "none";
-    });
-
-        document.querySelector('a[href="#tripme"]').addEventListener('click', function(event) {
-        event.preventDefault();
-        alert("Você clicou em TripMe! Prepare-se para uma viagem incrível.");
-    });
-
- document.querySelector('a[href="#meetus"]').addEventListener('click', function(event) {
-        event.preventDefault(); 
-        alert("Bem-vindo à seção MeetUs! Conheça mais sobre nossa equipe.");
-    });
-
- document.querySelector('a[href="#advice"]').addEventListener('click', function(event) {
-        event.preventDefault();
-        alert("Bem-vindo à seção Advice! Aqui você encontrará dicas valiosas para suas viagens.");
-    });
-
-        </script>
+    <scritp src= "script.js"> </script>
 </body>
 </html>
