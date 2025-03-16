@@ -3,133 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vilarejo Europeu</title>
-    <style> 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-         
-        header {
-            background-color: #03055B;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-         
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        nav li {
-            margin-right: 20px;
-        }
-        
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.2s ease-in-out;
-        }
-        
-        nav a:hover {
-            color: #ccc;  
-        }
-        #banner { 
-    height: 90vh; 
-    width: 99vw;
-    background-size: cover;
-    background-image: url('https://www.melhoresdestinos.com.br/wp-content/uploads/2023/09/cidadezinha-europa-conhecer-capa-1536x805.jpg');
+    <title>Viagens - TripMe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background: #03055B;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+.banner {
+    background-image: url('https://www.melhoresdestinos.com.br/wp-content/uploads/2023/09/cidadezinha-europa-conhecer-capa-1536x805.jpg');no-repeat center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}
+
+#claim-offer {
+    background: #f4a261;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#claim-offer:hover {
+    background: #e76f51;
+}
+
+section {
+    padding: 40px;
+    text-align: center;     
+}
+
+h1 {
+  position: absolute;
+  top: 21%;
+}
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+footer {
+    background: #03055B;
+    color: white;
+    text-align: center;
     padding: 20px;
 }
-#banner h1 {
-    position: absolute;
-    top: 21%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 36px;
-    margin: 0;
-}
-        #dicas {
-            background-color: #f7f7f7;
-            padding: 20px;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        #dicas h2 {
-            margin-top: 0;
-        }
-        
-        #dicas ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        #dicas li {
-            margin-bottom: 10px;
-        }
-        
-        #dicas a {
-            color: #337ab7;
-            text-decoration: none;
-        }
-        
-        #dicas a:hover {
-            color: #23527c;
-        }
-        
-    </style>
-</head>
+
+  </style>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#tripme">TripMe</a></li>
-                <li><a href="#meetUs">MeetUs</a></li>
-                <li><a href="#advice">Advice</a></li>
-            </ul>
-        </nav>
+   
+    <nav>
+        <ul>
+            <li><a href="#tripme">TripMe</a></li>
+            <li><a href="#meetus">MeetUs</a></li>
+            <li><a href="#advice">Advice</a></li> 
+        </ul>
         
-    </header>
+    </nav>
+
     <main>
-        <section id="banner">
-            <h1>Vilarejo Europeu</h1>
+        <section class="banner">
+            <h1>Descubra Lugares Incríveis pelo Mundo</h1>
         </section>
-        <section id="tripme">
-            <h2>TripMe</h2>
-            <p>Descreva sua viagem perfeita!</p>
-        </section>
-        <section id="meetUs">
-            <h2>MeetUs</h2>
-            <p>Conheça nossa equipe!</p>
-        </section>
-        <section id="advice">
-            <h2>Advice</h2>
-            <p>Dicas e conselhos para sua viagem!</p>
-        </section> 
-        <section id="dicas">
-            <h2>Dicas para sua viagem</h2>
-            <ul>
-                <li><a href="#">Pesquise sobre o destino</a></li>
-                <li><a href="#">Planeje sua viagem com antecedência</a></li>
-                <li><a href="#">Verifique os requisitos de visto</a></li>
-                <li><a href="#">Mantenha-se seguro</a></li>
-                <li><a href="#">Respeite a cultura local</a></li>
-            </ul>
-        </section>
+        
     </main>
-    <footer id="footer-wrapper">
-        <a href="about.html" target="_blank">Sobre nós</a>
-        <a href="contact.html" target="_blank">Contatos</a>
-        <p>&copy; 2025 Vilarejo Europeu</p>
+    
+    <div id="offer-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-offer">&times;</span>
+        <h2>Oferta Especial!</h2>
+        <p>Ganhe *20% de desconto* na sua próxima viagem! Use o código <strong>ProgramandoComDEVstart</strong>.</p>
+        <button id="claim-offer">Aproveitar Oferta</button>
+    </div>
+</div>
+    <section id="tripme">
+        <h2>TripMe</h2>
+        <p>Planeje sua viagem com as melhores dicas e roteiros exclusivos.</p>
+    </section>
+    
+    <section id="meetus">
+        <h2>MeetUs</h2>
+        <p>Conheça nossa equipe e descubra como podemos ajudar na sua viagem.</p>
+    </section>
+   
+    <section id="advice">
+        <h2>Advice</h2>
+        <p>Dicas de viagem, melhores destinos e recomendações personalizadas.</p>
+    </section>    
+
+    <footer>
+        <p>&copy; 2025 Viagens TripMe. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        setTimeout(function() {
+        document.getElementById('offer-modal').style.display = "flex";
+    }, 5000);
+
+    document.getElementById('offer-modal').addEventListener('click', function() {
+        document.getElementById('offer-modal').style.display = "none";
+    });
+
+    document.getElementById('claim-offer').addEventListener('click', function(event) {
+        event.stopPropagation();
+        alert("Oferta resgatada! Use o código ProgramandoComDEVstart no checkout.");
+        document.getElementById('offer-modal').style.display = "none";
+    });
+
+        document.querySelector('a[href="#tripme"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        alert("Você clicou em TripMe! Prepare-se para uma viagem incrível.");
+    });
+
+ document.querySelector('a[href="#meetus"]').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        alert("Bem-vindo à seção MeetUs! Conheça mais sobre nossa equipe.");
+    });
+
+ document.querySelector('a[href="#advice"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        alert("Bem-vindo à seção Advice! Aqui você encontrará dicas valiosas para suas viagens.");
+    });
+
+        </script>
 </body>
 </html>
-
